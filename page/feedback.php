@@ -33,6 +33,7 @@
 						}	
 					echo "</div>";
 				}
+				
 		
 if(isset($_POST['btnfeedback']))
 	{
@@ -68,6 +69,21 @@ if(isset($_POST['btnfeedback']))
 			$fb="";
 			$un="";
 	}
+// 	elseif(isset($_POST['V_feedback'])){
+
+// 		include('connect.php');
+// $check = false;
+// 	// Fetch all blog names
+// $blogQuery = "SELECT tblfeedback ";
+// $blogResult = mysqli_query($con, $blogQuery);
+// if ($blogResult) {
+//     while ($row = mysqli_fetch_assoc($blogResult)) {
+//         $blogNames[] = $row['tblfeedback'];
+//     }
+// }
+
+					
+// 	}
 	
 	
 
@@ -93,6 +109,18 @@ if(isset($_POST['btnfeedback']))
       </tr>
       <tr>
         <td style="text-align: right"><input type="submit" name="btnfeedback" id="btnfeedback" value="Send Feedback" class="button"></td>
+		<td>
+
+		<?php
+				  if(isset($_COOKIE['user'])){
+				  if($_COOKIE['user']=='Admin'){ 
+					echo ' <input type="submit" name="V_feedback" id="V_feedback" value="view">';
+					
+				 
+}
+				  }
+                 ?>
+		</td>
       </tr>
     </tbody>
   </table>
