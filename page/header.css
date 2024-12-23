@@ -1,0 +1,55 @@
+/* General styling for the header */
+.container-fluid {
+    background-color: #333; /* Dark background for the header */
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar-header .navbar-brand {
+    color: #04AA6D; /* Brand color */
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-header .navbar-brand:hover {
+    color: #d1e7dd; /* Hover effect for the brand */
+}
+
+/* Navigation links */
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav li a:hover {
+    background-color: #04AA6D; /* Green hover background */
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav li {
+        margin-bottom: 10px;
+    }
+}

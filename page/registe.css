@@ -1,0 +1,76 @@
+ <style>
+       body {
+           
+            
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input[type=text], input[type=password], input[type=email], input[type=date], textarea, select {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, textarea:focus, select:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        .registerbtn, .modifybtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover, .modifybtn:hover {
+            opacity: 1;
+        }
+
+        .form-section {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .form-actions {
+            text-align: center;
+        }
+
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a {
+            color: dodgerblue;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+    </style>
